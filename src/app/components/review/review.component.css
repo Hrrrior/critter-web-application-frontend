@@ -1,0 +1,35 @@
+#review-container {
+  margin-top: 30px;
+}
+
+.top {
+  margin-bottom: 5px;
+}
+
+.author {
+  color: #d7d7d7;
+  font-weight: 500;
+}
+
+.date {
+  color: #AAAAAA;
+}
+
+.review-text {
+  color: #888888;
+}
+
+.rating {
+  background-color: #383838;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: table;
+  text-align: center;
+}
+
+.rating-number {
+  display: table-cell;
+  vertical-align: middle;
+}

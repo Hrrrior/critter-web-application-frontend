@@ -1,0 +1,11 @@
+<div>
+  <div>
+    <app-search-bar (searchEvent)="receiveSearchText($event)" fxLayout="row" fxLayoutAlign="center center"></app-search-bar>
+  </div>
+  <div>
+    <app-filter-bar (filterEvent)="receiveFilter($event)" fxLayout="row" fxLayoutAlign="center center"></app-filter-bar>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="space-evenly start">
+    <app-game (click)="onClick(game)" *ngFor="let game of games | filter: searchText : params" [game]="game"></app-game>
+  </div>
+</div>

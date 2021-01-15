@@ -1,0 +1,20 @@
+<div id="review-container" fxLayout="row" fxLayoutAlign="start start">
+  <div class="rating">
+    <span class="rating-number">
+      {{ review.rating }}
+    </span>
+  </div>
+  <div id="content">
+    <div class="top">
+      <a class="author">
+        {{ review.author }}
+      </a>
+      <a class="date">
+        • {{ dateHuman() }}
+      </a>
+    </div>
+    <div class="review-text">
+      {{ review.reviewText }}
+    </div>
+  </div>
+</div>

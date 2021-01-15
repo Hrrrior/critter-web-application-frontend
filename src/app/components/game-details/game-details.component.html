@@ -1,0 +1,17 @@
+<div id="game-details-container" fxLayout="column" fxLayoutAlign="start start">
+  <button *ngIf="user.role === 'ADMIN'" id="delete" (click)="onDelete()" mat-flat-button color="warn">Delete</button>
+  <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-evenly start">
+    <img src="{{ game?.imgUrl }}" alt="Game image"/>
+    <div id="details">
+      <h1>{{ game?.name }}</h1>
+      <h3>{{ dateHuman() }}</h3>
+      <h3>{{ game?.developer }}</h3>
+      <p><b>Genre:</b> {{ game?.genres.join(', ') }} </p>
+      <p><b>Platforms:</b> {{ game?.platforms.join(', ') }} </p>
+      <p class="summary">{{ game?.description }}</p>
+    </div>
+  </div>
+  <app-add-review [game]="game"></app-add-review>
+  <app-review-list [game]="game" id="review-list"></app-review-list>
+</div>
+

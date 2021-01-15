@@ -1,0 +1,8 @@
+<div id="add-game-container">
+  <label>
+    <input id="add-game-input" [formControl]="name" (keyup.enter)="search(name.value)" placeholder="Add game"/>
+  </label>
+  <button id="add-game-button" (click)="search(name.value)">
+    <mat-icon aria-hidden="false" aria-label="Search icon">search</mat-icon>
+  </button>
+</div>

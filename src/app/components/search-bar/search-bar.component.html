@@ -1,0 +1,18 @@
+<div id="search-bar-container" ngClass.gt-xs="">
+  <label >
+    <input id="input" [(ngModel)]="searchText" (ngModelChange)="sendMessage(); hideChecker()" placeholder="Search by name">
+  </label>
+  <button  [hidden]="hideIcon" id="button" (click)="clear()">
+    <mat-icon aria-hidden="false" aria-label="Clear icon">clear</mat-icon>
+  </button>
+<!--  <form [formGroup]="filterForm" fxLayout="row" fxLayout.lt-md="column">-->
+<!--    <mat-form-field>-->
+<!--      <mat-label>{{"Order"}}</mat-label>-->
+<!--      <mat-select formControlName="order">-->
+<!--        <mat-option value="">{{"Ascending"}}</mat-option>-->
+<!--        <mat-option value="reverse">{{"Descending"}}</mat-option>-->
+<!--      </mat-select>-->
+<!--    </mat-form-field>-->
+<!--    &lt;!&ndash;<button mat-button type="submit" [disabled]="!filterForm.valid">{{'PRODUCTS.SEARCH_BAR.SEARCH' | translate}}</button>&ndash;&gt;-->
+<!--  </form>-->
+</div>

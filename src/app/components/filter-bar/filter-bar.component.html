@@ -1,0 +1,28 @@
+<div>
+  <form [formGroup]="filterForm" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center">
+    <mat-form-field>
+      <mat-label>Sort</mat-label>
+      <mat-select formControlName="sort">
+        <mat-option value="rating">Ascending by rating</mat-option>
+        <mat-option value="rating reverse">Descending by rating</mat-option>
+        <mat-option value="name">By name, A-Z</mat-option>
+        <mat-option value="name reverse">By name, Z-A</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Genres</mat-label>
+      <mat-select formControlName="genres">
+        <mat-option value="">All</mat-option>
+        <mat-option *ngFor="let gen of genresList" value="{{gen.name}}">{{gen.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Platforms</mat-label>
+      <mat-select formControlName="platforms">
+        <mat-option value="">All</mat-option>
+        <mat-option *ngFor="let plat of platformList" value="{{plat.name}}">{{plat.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-button type="submit" (click)="addFilter()">Add filter</button>
+  </form>
+</div>

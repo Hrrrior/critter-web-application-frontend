@@ -1,0 +1,4 @@
+<div id="main-page-container">
+  <app-add-game *ngIf="user?.role === 'ADMIN'" fxLayout="row" fxLayoutAlign="center center"></app-add-game>
+  <app-game-grid></app-game-grid>
+</div>

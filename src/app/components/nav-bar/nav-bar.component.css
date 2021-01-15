@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: #2A2A2A;
+}
+
+#nav-title {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.nav-links li a {
+  font-size: 16px;
+  color: #cfd8dc;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: white;
+}
+
+#nav-items {
+  display: flex;
+}

@@ -1,0 +1,55 @@
+#game-details-container {
+  margin: 30px auto;
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  #game-details-container {
+    width: 80%;
+  }
+}
+
+
+#delete {
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 2%;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 264px;
+  height: 352px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #d7d7d7;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #888888;
+}
+
+b {
+  font-weight: 500;
+  color: #b7b7b7;
+}
+
+.summary {
+  margin-top: 20px;
+}
+
+app-add-review {
+  width: 100%;
+}
+
+#review-list {
+  margin-bottom: 35px;
+}

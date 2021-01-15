@@ -1,0 +1,38 @@
+#flex-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#register-container {
+  width: 600px;
+}
+
+@media only screen and (max-width: 795px) {
+  #register-container {
+    width: 75%;
+  }
+}
+
+label {
+  display: inline-block;
+  width: 3em;
+  margin: .5em 30px .5em 0;
+  font-weight: 500;
+  color: #b7b7b7;
+}
+
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#password-container {
+  margin-top: 15px;
+}

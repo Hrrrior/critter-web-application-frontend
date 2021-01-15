@@ -1,0 +1,16 @@
+<div id="flex-container">
+  <div id="register-container">
+    <h2>Register</h2>
+
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+      <div>
+        <app-form-input [name]="'username'" [type]="'text'" [control]="checkoutForm.get('username')"></app-form-input>
+      </div>
+      <div id="password-container">
+        <app-form-input [name]="'password'" [type]="'password'" [control]="checkoutForm.get('password')"></app-form-input>
+      </div>
+
+      <button class="button" type="submit" mat-flat-button color="primary">Register</button>
+    </form>
+  </div>
+</div>

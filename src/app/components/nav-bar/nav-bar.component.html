@@ -1,0 +1,19 @@
+<header>
+  <a id="nav-title" (click)="navigateHome()">
+    Critter
+  </a>
+  <nav id="nav-items">
+    <ul class="nav-links">
+      <li (click)="navigateHome()">Home</li>
+    </ul>
+    <ul *ngIf="user == null" class="nav-links">
+      <li (click)="navigateRegister()">Register</li>
+    </ul>
+    <ul *ngIf="user == null" class="nav-links">
+      <li (click)="navigateLogin()">Login</li>
+    </ul>
+    <ul *ngIf="user != null" class="nav-links">
+      <li (click)="logout()">Logout</li>
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,50 @@
+label {
+  display: inline-block;
+  width: 3em;
+  margin: .5em 30px .5em 0;
+  font-weight: 500;
+  color: #b7b7b7;
+}
+
+#input-container {
+  -webkit-box-align: center;
+  align-items: center;
+  background: #252525;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 0.5em 0.75em 0.5em 0.75em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 100%;
+}
+
+#input-container:focus {
+  background: #383838;
+}
+
+#input-container input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  outline: 0;
+}
+
+#input-container input {
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+
+#input-container input::placeholder {
+  color: #757575;
+}
+
+input {
+  width: 100%;
+}

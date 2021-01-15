@@ -1,0 +1,26 @@
+#game-container {
+  margin: 15px;
+  cursor: pointer;
+  width: 264px;
+}
+
+img {
+  border-radius: 2%;
+  width: 264px;
+  height: 352px;
+}
+
+.title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.developer {
+  color: #888888;
+}
+
+.rating {
+  margin-top: 10px;
+  color: #888888;
+}

@@ -1,0 +1,18 @@
+<div id="add-review-container">
+  <form class="review-form">
+    <mat-form-field class="review-form-field">
+      <mat-label>Write a review...</mat-label>
+      <label>
+        <textarea matInput mat-autosize [formControl]="text"></textarea>
+      </label>
+    </mat-form-field>
+  </form>
+  <div>
+    <p>
+      Score:
+    </p>
+    <mat-slider id="slider" min="1" max="10" step="1" value="5" thumbLabel tickInterval="1" color="primary"
+                [(ngModel)]="slider"></mat-slider>
+  </div>
+  <button id="add" (click)="add()" mat-flat-button color="primary">Add</button>
+</div>
